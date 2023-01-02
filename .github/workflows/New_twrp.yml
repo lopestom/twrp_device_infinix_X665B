@@ -15,7 +15,7 @@ on:
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-11
   DEVICE: x665b_h6222
-  DT_LINK: https://github.com/lopestom/twrp_device_infinix_x665b_h6222
+  DT_LINK: https://github.com/lopestom/twrp_device_X665B
   DT_PATH: device/infinix/x665b_h6222
   TARGET: bootimage
   TZ: Asia/manila
