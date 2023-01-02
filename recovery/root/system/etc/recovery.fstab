@@ -1,0 +1,16 @@
+# 151 "vendor/mediatek/proprietary/hardware/fstab/mt6761/fstab.in.mt6761"
+system              /system              ext4       ro       wait,logical,first_stage_mount,slotselect
+system_ext          /system_ext          ext4       ro       wait,logical,first_stage_mount,slotselect
+vendor              /vendor              ext4       ro       wait,logical,first_stage_mount,slotselect
+product             /product             ext4       ro       wait,logical,first_stage_mount,slotselect
+
+
+/dev/block/platform/bootdevice/by-name/md_udc       /metadata        ext4      noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
+
+/dev/block/platform/bootdevice/by-name/userdata     /data        f2fs noatime,nosuid,nodev,discard,noflush_merge,reserve_root=134217,resgid=1065,inlinecrypt,tran_gc latemount,wait,check,quota,reservedsize=128M,formattable,resize,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption,
+
+/dev/block/platform/bootdevice/by-name/para         /misc            emmc                defaults       defaults
+
+/dev/block/platform/bootdevice/by-name/boot         /boot            emmc                defaults       first_stage_mount,nofail,slotselect
+
+/dev/block/platform/bootdevice/by-name/proinfo      /proinfo         emmc                defaults       defaults
