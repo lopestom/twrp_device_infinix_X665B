@@ -1,4 +1,5 @@
 # TWRP device tree for Infinix Hot 12i (X665B) - MT6761 - A11
+## No Crypt
 
 ## Status
 
