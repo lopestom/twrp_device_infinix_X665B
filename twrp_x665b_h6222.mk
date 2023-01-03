@@ -23,14 +23,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from x665b_h6222 device
-$(call inherit-product, device/infinix/x665b_h6222/device.mk)
+$(call inherit-product, device/infinix/X665B/device.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := x665b_h6222
-PRODUCT_NAME := twrp_x665b_h6222
+PRODUCT_DEVICE := X665B
+PRODUCT_NAME := twrp_X665B
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix X665B
 PRODUCT_MANUFACTURER := INFINIX MOBILITY LIMITED
