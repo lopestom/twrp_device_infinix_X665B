@@ -14,9 +14,9 @@ on:
 
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-11
-  DEVICE: x665b_h6222
+  DEVICE: X665B
   DT_LINK: https://github.com/lopestom/twrp_device_X665B
-  DT_PATH: device/infinix/x665b_h6222
+  DT_PATH: device/infinix/X665B
   TARGET: bootimage
   TZ: Asia/manila
 
@@ -60,14 +60,14 @@ jobs:
        - name: Checkout device tree
          uses: actions/checkout@v2
          with:
-          path: twrp/device/infinix/x665b_h6222
+          path: twrp/device/infinix/X665B
              
        - name: Build
          run: |
               PATH=~/bin:$PATH
               cd twrp
-              export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch twrp_x665b_h6222-eng && mka $TARGET -j$(nproc --all)
-              cp  out/target/product/x665b_h6222/boot.img    out/target/product/x665b_h6222/boot-X665B-A11-$(date +"%Y%m%d").img  
+              export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch twrp_X665B-eng && mka $TARGET -j$(nproc --all)
+              cp  out/target/product/X665B/boot.img    out/target/product/X665B/boot-X665B-A11-$(date +"%Y%m%d").img  
              
        - name: Release recovery image
          uses: softprops/action-gh-release@v1
@@ -77,5 +77,5 @@ jobs:
           tag_name: Infinix_Hot_12i-X665B
           name: TWRP37x_11
           files: | 
-            twrp/out/target/product/x665b_h6222/boot*.img
-            twrp/out/target/product/x665b_h6222/ramdisk*.img
+            twrp/out/target/product/X665B/boot*.img
+            twrp/out/target/product/X665B/ramdisk*.img
