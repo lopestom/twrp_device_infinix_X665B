@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/infinix/x665b_h6222
+LOCAL_PATH := device/infinix/X665B
 
 # A/B
 AB_OTA_PARTITIONS += \
