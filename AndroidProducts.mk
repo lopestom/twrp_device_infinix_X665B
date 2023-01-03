@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/twrp_x665b_h6222.mk
+     $(LOCAL_DIR)/twrp_X665B.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_x665b_h6222-userdebug \
-    twrp_x665b_h6222-user \
-    twrp_x665b_h6222-eng
+    twrp_X665B-eng \
+    twrp_X665B-user \
+    twrp_X665B-userdebug
