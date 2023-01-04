@@ -11,6 +11,14 @@ Some tests was made:
 Issue: 
 
 New file with new version TWRP3.7.0_11: Need test after 2023-01-01
+Two files compiled. The first file tested/started by s.777 and have no touch screen. The drivers of these's located in the \vendor\firmware\novat* but TWRP has that issue. Maybe modules (\lib\modules) need putting in the DT too but need more tests.
+The second file created with A11 branch so is not tested since 2023-01-03 and have minimal files so not enc_dec mode. The new file copied to \vendor\firmware\gt1151_default_firmware2.img for test touch drive.
+I think is need put the flag to test about issue with touch screen:
+```
+# Try disabling the screen timeout. It is not a fix, but it can be an effective work-around.
+TW_NO_SCREEN_TIMEOUT := true
+```
+But I'm waiting the test of second file in this moment.
 
 ****2022-10-12****: Changes to made new version TWRP3.x.x
 
