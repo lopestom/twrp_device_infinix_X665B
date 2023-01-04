@@ -28,7 +28,7 @@ New file with new version TWRP3.7.0_11: Need test after 2023-01-01
 
 ```bash
 source build/envsetup.sh
-lunch twrp_x665b_h6222-eng
+lunch twrp_X665B-eng
 mka bootimage
 ```
 
